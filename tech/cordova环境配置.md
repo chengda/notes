@@ -18,3 +18,15 @@
 ```
 # npm install -g cordova
 ```
+## 4. 创建cordova工程
+```
+# cordova create joys-mobile-app com.joysfintech.mobile.app  JoysCloud
+```
+* joys-mobile-app 工程目录名称
+* com.joysfintech.mobile.app 默认的反向域名
+* JoysCloud 应用名称
+
+```
+# cd joys-mobile-app
+# cordova platform add android
+```
