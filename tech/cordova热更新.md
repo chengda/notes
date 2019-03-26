@@ -106,7 +106,7 @@ native-interface：当前 native side 的版本号
 * 参照1.1.4进行操作。
 
 #### 1.2.3. 发布代码到www目录
-* **注意：**必须包含index.html，且index.html中必须引入cordova.js，因为触发更新的代码写在cordova.js中，不引入不会更新。
+*  **注意：** 必须包含index.html，且index.html中必须引入cordova.js，因为触发更新的代码写在cordova.js中，不引入不会更新。
 
 #### 1.2.4. 构建热更新版本
 在热更新工作目录下：
