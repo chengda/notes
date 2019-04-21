@@ -41,3 +41,4 @@ export XMODIFIERS="@im=fcitx"
 ### 可能的问题
 
 如果遇到登录之后输入法fcitx没有启动的问题，可以讲fcitx设置为自动启动，deepin桌面下右键fcitx的图片就能做到，gnome桌面可以用gnome-tweaks，也可以就简单的在.xprofile里面加一句fcitx。
+![input-method](_v_images/20190421141207645_1254540184.png)
