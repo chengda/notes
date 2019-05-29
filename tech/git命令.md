@@ -35,3 +35,9 @@ stash是用来管理本地未提交的变更缓存的，变更被缓存后，当
 ```
 # git stash clear
 ```
+
+## 3. config
+### 3.1. 保存身份信息
+```
+git config --global credential.helper store
+```
