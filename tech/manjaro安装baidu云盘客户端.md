@@ -24,11 +24,11 @@
 
 #### 2.4.1. 移动软件目录
 ```
-# mv /opt/baidunetdisk /usr/local/
+# mv ./opt/baidunetdisk /usr/local/
 ```
 #### 2.4.2. 移动快捷方式目录
 ```
-# mv /usr/share/* /usr/local/share/
+# mv ./usr/share/* /usr/local/share/
 ```
 #### 2.4.3. 修改快捷方式
 ```
