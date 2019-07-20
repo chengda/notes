@@ -50,3 +50,16 @@ Categories=Network;
 
 #### 2.4.4. 使用
 在应用程序中查找baidunetdisk，就能找到软件快捷图标了。
+
+#### 2.4.5. 问题
+非root用户可能会卡在第一个界面一直等待，可以用gksu提升权限。
+
+```
+pacman -Sy gksu
+```
+
+baidunetdisk.desktop改下面这行：
+
+```
+Exec=gksu "/usr/local/baidunetdisk/baidunetdisk" %U
+```
