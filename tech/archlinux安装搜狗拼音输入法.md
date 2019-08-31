@@ -1,29 +1,10 @@
 # archlinux安装搜狗拼音输入法
 ## 安装
 
-### 安装Fcitx
-
-由于搜狗拼音输入法依赖于Fcitx，在安装搜狗拼音输入法之前，需要先行安装Fcitx，在终端窗口下直接输入：
-
 ```
-$ sudo pacman -S fcitx
-```
-
-即可完成安装，需要注意的是，仅仅安装这一项是不够的，这样在安装完成之后，Fcitx基本上是处于不可用的状态，我们还需要安装以下几个包：
-
-```
-$ sudo pacman -S fcitx-configtool
-$ sudo pacman -S fcitx-gtk2 fcitx-gtk3 fcitx-qt4 fcitx-qt5
-```
-
-### 安装搜狗拼音
-
-在前一步中我们已经正确的配置了源，这里直接输入：
-
-```
-$ sudo pacman -S fcitx-sogoupinyin
-// 安装配置工具
-$ sudo pacman -S fcitx-configtool
+// $ sudo pacman -S fcitx fcitx-configtool fcitx-sogoupinyin
+// 由于依赖fcitx-qt4被从源中移除，sogou拼音尚未相应更新，所以会出现搜狗拼音无法使用的情况，所以暂时用下面的方式替代
+$ sudo pacman -S fcitx-lilydjwg-git fcitx-configtool fcitx-sogoupinyin
 ```
 
 ## 配置
