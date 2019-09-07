@@ -47,3 +47,8 @@ vboxmanage setextradata macos VBoxInternal2/EfiGraphicsResolution 1440x900
 
 ## 5.1. 网络
 ## 5.2. 软件
+## 附录：
+
+* 本文参考以下资料
+
+https://blog.csdn.net/kaluosifa/article/details/87919734
