@@ -41,12 +41,23 @@ vboxmanage setextradata macos VBoxInternal2/EfiGraphicsResolution 1440x900
 
 按提示安装即可
 
+* 安装过程中选择语言，简体中文
+
+* 安装找不到磁盘，在顶部工具菜单下选择磁盘工具，抹掉内置磁盘，创建新的磁盘
+
+* 继续安装macOS -> 选择刚创建的磁盘 -> 安装
+
 ## 5. 配置
-
-
-
 ## 5.1. 网络
+
 ## 5.2. 软件
+
+* 安装RVM
+
+```
+　$ curl -L https://get.rvm.io | bash -s stable
+```
+
 ## 附录：
 
 * 本文参考以下资料
