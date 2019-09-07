@@ -80,6 +80,14 @@ brew search node
 brew install node
 ```
 
+* 安装Xcode
+
+最简单当然是在AppStore中安装，如果新版本不支持当前操作系统版本，那么需要手工下载老版本的xcode。
+
+官方下载地址：https://developer.apple.com/download/more/
+
+macos 10.13 可用的xcode最新版本是 xcode 9.0.1
+
 ## 附录：
 
 * 本文参考以下资料
