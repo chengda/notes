@@ -88,6 +88,8 @@ brew install node
 
 macos 10.13 可用的xcode最新版本是 xcode 9.0.1
 
+下载下来是 .xip格式，双击自动解压成 .app， 移动到 /Applications/下面就可以了。
+
 ## 附录：
 
 * 本文参考以下资料
