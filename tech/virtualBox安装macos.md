@@ -50,24 +50,35 @@ vboxmanage setextradata macos VBoxInternal2/EfiGraphicsResolution 1440x900
 ## 5. 配置
 ## 5.1. 网络
 
+在【系统偏好设置】-【网络】下设置，可设置固定IP等。
+
 ## 5.2. 软件
 
 * 安装RVM
 
 ```
-　$ curl -L https://get.rvm.io | bash -s stable
+$ curl -L https://get.rvm.io | bash -s stable
 ```
+
 * 安装Ruby
 ```
 //列出已知的ruby版本
 $ rvm list known
-//可以选择现有的rvm版本来进行安装（下面以rvm 2.0.0版本的安装为例）
-$ rvm install 2.0.0
+
+//可以选择现有的rvm版本来进行安装（以2.6.3为例）
+$ rvm install 2.6.3
 ```
-安装Ruby过程中会自动安装HomeBrew
+  安装Ruby过程中会自动安装HomeBrew
 
-* 用HomeBrew安装软件
+* 用HomeBrew安装软件 （以安装nodejs为例）
 
+```
+//查找软件
+brew search node
+
+//安装软件
+brew install node
+```
 
 ## 附录：
 
