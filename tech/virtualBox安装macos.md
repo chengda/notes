@@ -57,6 +57,17 @@ vboxmanage setextradata macos VBoxInternal2/EfiGraphicsResolution 1440x900
 ```
 　$ curl -L https://get.rvm.io | bash -s stable
 ```
+* 安装Ruby
+```
+//列出已知的ruby版本
+$ rvm list known
+//可以选择现有的rvm版本来进行安装（下面以rvm 2.0.0版本的安装为例）
+$ rvm install 2.0.0
+```
+安装Ruby过程中会自动安装HomeBrew
+
+* 用HomeBrew安装软件
+
 
 ## 附录：
 
