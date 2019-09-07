@@ -1,6 +1,9 @@
 
 # VirtualBox 安装 Mac OS 的步骤
 ## 1. 下载苹果安装盘
+
+Mac OS 10.13下载链接：https://pan.baidu.com/s/1OpUIKmLdVuo4mZ_duuyrYA 提取码: e99c
+
 ## 2. 创建 virtual box 虚拟机
 ## 3. 修改虚拟机参数
 ```
