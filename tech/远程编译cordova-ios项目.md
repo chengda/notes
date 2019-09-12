@@ -1,5 +1,6 @@
 
 # SSH登录Mac虚拟机编译Cordova项目
+## 1. 安装xcode
 
 
 ## 最坑的问题
