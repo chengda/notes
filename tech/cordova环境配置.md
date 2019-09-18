@@ -13,6 +13,11 @@
 ```
 # cd /opt/android-sdk/tools/bin
 # sudo sdkmanager "platform-tools" "platforms;android-27"
+
+//查看sdk
+# android -v list sdk
+//更新sdk。 -t后面的数字是上面list中的序号， -u是不启动图形界面
+# android -v update sdk -t 24 -u
 ```
 ## 3. 安装cordova
 ```
