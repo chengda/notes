@@ -30,3 +30,27 @@
 # cd joys-mobile-app
 # cordova platform add android
 ```
+## 5. 修改gradle仓库
+默认jcenter仓库一般连不上，需要修改成国内仓库。
+```
+buildscript {
+    repositories {
+        maven{ url 'http://maven.aliyun.com/nexus/content/groups/public/'}
+    }
+}
+
+
+allprojects {
+    repositories {
+        maven{ url 'http://maven.aliyun.com/nexus/content/groups/public/'}
+    }
+}
+```
+这几个地方都要修改：
+
+* platform/android/build.gradle
+
+* platform/android/app/build.gradle
+
+* platfrom/android/CordovaLib/build.gradle
+
