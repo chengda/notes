@@ -41,6 +41,7 @@
 buildscript {
     repositories {
         maven{ url 'http://maven.aliyun.com/nexus/content/groups/public/'}
+        google()
     }
 }
 
@@ -48,6 +49,7 @@ buildscript {
 allprojects {
     repositories {
         maven{ url 'http://maven.aliyun.com/nexus/content/groups/public/'}
+        google()
     }
 }
 ```
