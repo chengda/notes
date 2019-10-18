@@ -3,8 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <title>Flex layout demo</title>
+    <style>
+        p {
+            margin: 0;
+        }
+
+        .playground {
+            margin: 60px auto;
+            width: 400px;
+            border: 1px solid #E1E1E1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            line-height: 54px;
+        }
+
+        .playground .left-bar {
+            display: flex;
+            align-items: center;
+            margin-left: 16px;
+        }
+
+        .playground .left-bar .goback-icon {
+
+        }
+
+        .playground .left-bar .goback-text {
+            margin-left: 8px;
+            font-size: 14px;
+            color: #515151;
+        }
+
+        .playground .title-text {
+            flex: 1;
+            text-align: center;
+            font-size: 16px;
+            color: #515151;
+        }
+
+        .playground .search-icon {
+            margin-right: 16px;
+            margin-left: 34px;
+        }
+    </style>
 </head>
 <body>
-hello
+<div class="playground">
+    <div class="left-bar">
+        <img class="goback-icon" src="./images/goback.svg">
+        <p class="goback-text">返回</p>
+    </div>
+    <p class="title-text">标题</p>
+    <img class="search-icon" src="./images/search.svg">
+</div>
 </body>
 </html>

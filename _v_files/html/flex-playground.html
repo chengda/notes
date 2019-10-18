@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex Playground</title>
+</head>
+<style>
+
+    h1 {
+        padding-bottom: 10px;
+        border-bottom: 1px solid #E1E1E1;
+    }
+
+    /*==============案例1==============*/
+    .box1 {
+        margin: 20px auto;
+        width: 600px;
+        height: 300px;
+        border: 1px solid #E1E1E1;
+        display: flex;
+        align-items: center;
+    }
+
+    .box1 .item {
+        flex: 1;
+    }
+
+    /*==============案例2==============*/
+    .box2 {
+        margin: 20px auto;
+        width: 300px;
+        height: 600px;
+        border: 1px solid #E1E1E1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box2 .item {
+        flex: 1;
+    }
+
+    /*==============案例3==============*/
+    .box3 {
+        margin: 20px auto;
+        width: 600px;
+        height: 300px;
+        border: 1px solid #E1E1E1;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+
+    .box3 .item {
+        width: calc(25% - 20px);
+        height: 20%;
+        margin: 10px;
+    }
+
+    /*==============案例4==============*/
+    .box4 {
+        margin: 20px auto;
+        width: 600px;
+        height: 100px;
+        border: 1px solid #E1E1E1;
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+
+    .box4 .item {
+        height: 100%;
+    }
+
+    .box4 .left-box {
+        display: flex;
+    }
+
+    .box4 .center-box {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box4 .right-box {
+        display: flex;
+    }
+
+    /*==============案例5==============*/
+    .box5 {
+        margin: 20px auto;
+        width: 350px;
+        height: 700px;
+        border: 1px solid #E1E1E1;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .box5 .item {
+        width: 100%;
+    }
+
+    .box5 .middle-box {
+        flex: 1;
+        overflow-y: auto;
+    }
+
+    /*==============案例6==============*/
+    .box6 {
+        margin: 20px auto;
+        width: 600px;
+        height: 300px;
+        border: 1px solid #E1E1E1;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box6 .item {
+        width: 200px;
+        height: 100px;
+        background-color: #9198e5;
+        margin-left: 200px;
+    }
+
+    .box6 .middle-line {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 0;
+        height: 100%;
+        border-left: 1px dashed #E1E1E1;
+    }
+
+</style>
+<body>
+<div>
+    <div>
+        <h1>案例1</h1>
+        <div class="box1">
+            <div class="item" style="background-color: red; height: 50px"></div>
+            <div class="item" style="background-color: orange; height: 200px"></div>
+            <div class="item" style="background-color: yellow; height: 80px"></div>
+            <div class="item" style="background-color: green; height: 60px"></div>
+            <div class="item" style="background-color: cadetblue; height: 100px; align-self: flex-end">奇葩</div>
+            <div class="item" style="background-color: blue; height: 130px"></div>
+            <div class="item" style="background-color: purple; height: 77px"></div>
+        </div>
+    </div>
+    <div>
+        <h1>案例2</h1>
+        <div class="box2">
+            <div class="item" style="background-color: red; width: 50px"></div>
+            <div class="item" style="background-color: orange; width: 200px"></div>
+            <div class="item" style="background-color: yellow; width: 80px"></div>
+            <div class="item" style="background-color: green; width: 60px; align-self: flex-start">奇葩</div>
+            <div class="item" style="background-color: cadetblue; width: 100px"></div>
+            <div class="item" style="background-color: blue; width: 130px"></div>
+            <div class="item" style="background-color: purple; width: 77px"></div>
+        </div>
+    </div>
+    <div>
+        <h1>案例3</h1>
+        <div class="box3">
+            <div class="item" style="background-color: red"></div>
+            <div class="item" style="background-color: orange"></div>
+            <div class="item" style="background-color: yellow"></div>
+            <div class="item" style="background-color: green"></div>
+            <div class="item" style="background-color: cadetblue"></div>
+            <div class="item" style="background-color: blue"></div>
+            <div class="item" style="background-color: purple"></div>
+        </div>
+    </div>
+    <div>
+        <h1>案例4</h1>
+        <div class="box4">
+            <div class="left-box">
+                <div class="item" style="background-color: red;width: 50px"></div>
+                <div class="item" style="background-color: orange;width: 50px"></div>
+            </div>
+            <div class="center-box item" style="background-color: yellow">我是文案</div>
+            <div class="right-box">
+                <div class="item" style="background-color: green;width: 50px"></div>
+                <div class="item" style="background-color: cadetblue;width: 50px"></div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h1>案例5</h1>
+        <div class="box5">
+            <div class="top-box">
+                <div class="item" style="background-color: red;height: 30px"></div>
+                <div class="item" style="background-color: orange;height: 30px"></div>
+            </div>
+            <div class="middle-box" style="background-color: yellow">
+                <div class="item" style="height: 1000px;background-image: linear-gradient(#666465, #9198e5);"></div>
+            </div>
+            <div class="bottom-box">
+                <div class="item" style="background-color: green;height: 58px"></div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h1>案例6</h1>
+        <div class="box6">
+            <div class="item"></div>
+            <div class="middle-line"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
