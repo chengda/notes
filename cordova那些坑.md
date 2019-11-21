@@ -16,3 +16,5 @@
 **解决办法：**
 
 只要管理好顺序喽。先添加平台，再添加插件。
+
+或者修改一下插件下面的plugin.xml，把after_plugin_add改成after_plugin_install，这样就能在每次添加platform后也都执行了。
