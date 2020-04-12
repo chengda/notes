@@ -23,3 +23,18 @@ export XMODIFIERS="@im=fcitx"
 
 如果遇到登录之后输入法fcitx没有启动的问题，可以讲fcitx设置为自动启动，deepin桌面下右键fcitx的图片就能做到，gnome桌面可以用gnome-tweaks，也可以就简单的在.xprofile里面加一句fcitx。
 ![input-method](_v_images/20190421141207645_1254540184.png)
+
+
+**************************************
+# 2020新方法
+- 1，sudo pacman -S yaourt
+- 2，sudo pacman -S fcitx-sogoupinyin fcitx-configtool fcitx-im
+- 3，sudo pacman -U https://arch-archive.tuna.tsinghua.edu.cn/2019/04-29/community/os/x86_64/fcitx-qt4-4.2.9.6-1-x86_64.pkg.tar.xz
+- 4， sudo nano /etc/environment
+- 5， 在文件末尾写入以下三行：
+```
+GTK_IM_MODULE=fcitx
+QT_IM_MODULE=fcitx
+XMODIFIERS="@im=fcitx"
+```
+保存，然后重启。
