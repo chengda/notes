@@ -3,6 +3,7 @@ Thinkpad X1 carbon 2016(Gen 4)
 
 # 2. 参考archlinux wiki
 https://wiki.archlinux.org/index.php/Lenovo_ThinkPad_X1_Carbon_(Gen_4)#Fingerprint_Reader
+
 https://aur.archlinux.org/packages/libfprint-vfs009x-git/
 
 # 3. 步骤
