@@ -13,3 +13,9 @@ sudo pacman -S manjaro-zsh-config #manjaro的zsh配置文档。
 cp /etc/skel/.zshrc ~/.zshrc #将配置文件复制到用户目录
 ```
 更新版本后也需要重新复制这个配置文件，以便
+
+# 4. 修改默认shell
+```
+chsh -s /bin/zsh
+```
+重启生效
